@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="value" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="362" Margin="197,109,0,0" TextChanged="Value_TextChanged"/>
+        <TextBox x:Name="key" HorizontalAlignment="Left" Height="23" Margin="197,157,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="363" RenderTransformOrigin="0.5,0.5" TextChanged="Key_TextChanged">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.607"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="107,109,0,0" TextWrapping="Wrap" Text="Value" VerticalAlignment="Top" Width="57" FontFamily="Yu Gothic UI Semibold" FontSize="20" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="110,156,0,0" TextWrapping="Wrap" Text="Key" VerticalAlignment="Top" Width="54" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" FontSize="20"/>
+        <Button x:Name="show" Content="Show All" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Margin="482,225,0,0" Height="38" Click="Show_Click"/>
+        <Button x:Name="remove" Content="Remove" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="314,225,0,0" Height="38" Click="Remove_Click"/>
+        <Button x:Name="add" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="148,225,0,0" Height="38" Click="Add_Click"/>
+
+    </Grid>
+</Window>
